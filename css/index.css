@@ -31,12 +31,32 @@
   color: #ddd;
   padding: 0 5px;
 }
+.head-wrap li:first-child {
+  cursor: pointer;
+}
+.region-hover {
+  position: relative;
+}
+.hover:hover {
+  background-color: #fff;
+}
+.hover:hover .dialog {
+  display: block;
+}
+.dialog {
+  background-color: #fff;
+  width: 242px;
+  height: 260px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 30px;
+  left: -6px;
+  z-index: 100;
+  display: none;
+}
 
 #head-search {
   padding: 20px 0 10px 0;
-}
-.head-wrap li:first-child {
-  cursor: pointer;
 }
 
 #head-search h1 a {
